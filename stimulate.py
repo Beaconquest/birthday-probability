@@ -1,6 +1,6 @@
 import random
 
-def simulate(num_people):
+def simulate(num_people: int) -> None:
     '''Simulates the probablity of the birthday of an individual
     will be on the same day.'''
     
@@ -45,7 +45,7 @@ def simulate(num_people):
         if not match:
             print("\n\nIn our simulation, no two people have the same birthday")
 
-def calculate_probability(num_people):
+def calculate_probability(num_people: int) -> None:
     """ Calculates the probability of matching birthday among individuals."""
 
     # Check there is at least 2 people in the room
@@ -67,7 +67,7 @@ def calculate_probability(num_people):
         print(f"\n\nThe probability that two people in a room of {num_people}" +
         f" people have the same birthday is nearly {rounded}%")
 
-def find_duplicates(birthdays_list, birthday, index):
+def find_duplicates(birthdays_list: list, birthday: str, index:int):
     """Find the same birthday within our list of birthdays."""
     people = []
     for i in range(len(birthdays_list)):
