@@ -45,7 +45,6 @@ def simulate(num_people):
         if not match:
             print("\n\nIn our simulation, no two people have the same birthday")
 
-# Calculate the probability of there being 2 people with the same birthday
 def calculate_probability(num_people):
     """ Calculates the probability of matching birthday among individuals."""
 
